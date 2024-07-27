@@ -1,14 +1,16 @@
 import type { CosmWasmClient } from "npm:@cosmjs/cosmwasm-stargate@^0.32.4";
 
+/** Block height and date */
 export type Block = {
+    /** Block height */
     height: number;
+    /** Block date */
     date: Date;
 };
 
-/**
- * Class to find the nearest block to a specified date
- */
+/** Class to find the nearest block to a specified date */
 export class CosmosDater {
+    /** Number of requests made to the blockchain */
     public requests = 0;
     private readonly client: CosmWasmClient;
     private firstBlock: Block | undefined;
