@@ -1,0 +1,11 @@
+{
+	"fmt": {
+		"useTabs": true,
+		"indentWidth": 4,
+		"proseWrap": "never",
+		"lineWidth": 140
+	},
+	"name": "@nktkas/cosmos-block-for-date",
+	"version": "0.1.0",
+	"exports": "./index.ts"
+}
