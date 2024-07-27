@@ -5,6 +5,9 @@ export type Block = {
     date: Date;
 };
 
+/**
+ * Class to find the nearest block to a specified date
+ */
 export class CosmosDater {
     public requests = 0;
     private readonly client: CosmWasmClient;
@@ -25,6 +28,13 @@ export class CosmosDater {
         this.blockTime = (this.latestBlock.date.getTime() - this.firstBlock.date.getTime()) / (this.latestBlock.height - 1);
     }
 
+    /**
+     * Get the block closest to the given date
+     * @param date The target date for which to find the nearest block
+     * @param after Block after, optional. Search for the nearest block before or after the given date. True by default
+     * @param refresh Refresh boundaries, optional. Recheck the latest block before request. False by default
+     * @returns A Promise resolving to a Block object with height and date of the closest block to the given date
+     */
     public async getBlock(date: Date, after = true, refresh = false): Promise<Block> {
         if (refresh || this.firstBlock == undefined || this.latestBlock == undefined || this.blockTime == undefined) {
             await this.#getBoundaries();
