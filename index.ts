@@ -1,4 +1,4 @@
-import type { CosmWasmClient } from "npm:@cosmjs/cosmwasm-stargate";
+import type { CosmWasmClient } from "npm:@cosmjs/cosmwasm-stargate@^0.32.4";
 
 export type Block = {
     height: number;
