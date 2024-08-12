@@ -6,13 +6,35 @@ This library is a fork of [eth-block-for-date](https://github.com/m1guelpf/eth-b
 
 ## Installation
 
-https://jsr.io/@nktkas/cosmos-block-for-date
+### [NPM](https://www.npmjs.com/package/@nktkas/cosmos-block-for-date)
+
+```
+npm i @nktkas/cosmos-block-for-date
+```
+
+### Deno, Yarn, pnpm, Bun from [JSR](https://jsr.io/@nktkas/cosmos-block-for-date)
+
+```
+deno add @nktkas/cosmos-block-for-date
+```
+
+```
+yarn dlx jsr add @nktkas/cosmos-block-for-date
+```
+
+```
+pnpm dlx jsr add @nktkas/cosmos-block-for-date
+```
+
+```
+bunx jsr add @nktkas/cosmos-block-for-date
+```
 
 ## Usage
 
 ```typescript
-import { CosmosDater } from "jsr:@nktkas/cosmos-block-for-date";
-import { CosmWasmClient } from "npm:@cosmjs/cosmwasm-stargate";
+import { CosmosDater } from "@nktkas/cosmos-block-for-date";
+import { CosmWasmClient } from "@cosmjs/cosmwasm-stargate";
 
 const client = await CosmWasmClient.connect("YOUR_RPC_URL");
 const dater = new CosmosDater(client);

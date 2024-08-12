@@ -6,6 +6,15 @@
 		"lineWidth": 140
 	},
 	"name": "@nktkas/cosmos-block-for-date",
-	"version": "0.1.2",
-	"exports": "./index.ts"
+	"version": "0.1.3",
+	"exports": "./index.ts",
+	"imports": {
+		"@cosmjs/cosmwasm-stargate": "npm:@cosmjs/cosmwasm-stargate@^0.32.4"
+	},
+	"publish": {
+		"exclude": [
+			".github",
+			"package.json"
+		]
+	}
 }

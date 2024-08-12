@@ -1,4 +1,4 @@
-name: Publish
+name: Publish Package to JSR
 on:
   push:
     branches:

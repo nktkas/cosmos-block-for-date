@@ -1,4 +1,4 @@
-import type { CosmWasmClient } from "npm:@cosmjs/cosmwasm-stargate@^0.32.4";
+import type { CosmWasmClient } from "@cosmjs/cosmwasm-stargate";
 
 /** Block height and date */
 export type Block = {

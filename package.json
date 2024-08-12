@@ -1,0 +1,35 @@
+{
+    "name": "@nktkas/cosmos-block-for-date",
+    "version": "0.1.3",
+    "description": "Get Cosmos block number by a given date, using CosmWasmClient.",
+    "types": "./index.ts",
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/nktkas/cosmos-block-for-date.git"
+    },
+    "keywords": [
+        "cosmos",
+        "cosmjs",
+        "blockchain",
+        "web3",
+        "dapp",
+        "utilties"
+    ],
+    "author": {
+        "email": "github.turk9@passmail.net",
+        "name": "nktkas"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/nktkas/cosmos-block-for-date/issues"
+    },
+    "homepage": "https://github.com/nktkas/cosmos-block-for-date#readme",
+    "dependencies": {
+        "@cosmjs/cosmwasm-stargate": "^0.32.4"
+    },
+    "files": [
+        "*",
+        "!/.github",
+        "!/deno.json"
+    ]
+}
