@@ -2,6 +2,7 @@
     "name": "@nktkas/cosmos-block-for-date",
     "version": "0.1.3",
     "description": "Get Cosmos block number by a given date, using CosmWasmClient.",
+    "main": "./index.ts",
     "types": "./index.ts",
     "repository": {
         "type": "git",
