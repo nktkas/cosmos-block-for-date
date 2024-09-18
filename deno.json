@@ -13,8 +13,7 @@
 	},
 	"publish": {
 		"exclude": [
-			".github",
-			"package.json"
+			".github"
 		]
 	}
 }

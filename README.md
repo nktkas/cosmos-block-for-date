@@ -6,16 +6,14 @@ This library is a fork of [eth-block-for-date](https://github.com/m1guelpf/eth-b
 
 ## Installation
 
-### [NPM](https://www.npmjs.com/package/@nktkas/cosmos-block-for-date)
-
-```
-npm i @nktkas/cosmos-block-for-date
-```
-
-### Deno, Yarn, pnpm, Bun from [JSR](https://jsr.io/@nktkas/cosmos-block-for-date)
+### Deno, npm, Yarn, pnpm, Bun from [JSR](https://jsr.io/@nktkas/cosmos-block-for-date)
 
 ```
 deno add @nktkas/cosmos-block-for-date
+```
+
+```
+npx jsr add @nktkas/cosmos-block-for-date
 ```
 
 ```
