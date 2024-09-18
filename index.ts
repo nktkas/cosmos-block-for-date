@@ -8,7 +8,9 @@ export type Block = {
     date: Date;
 };
 
-/** Class to find the nearest block to a specified date */
+/**
+ * Class to find the nearest block to a specified date
+ */
 export class CosmosDater {
     /** Number of requests made to the blockchain */
     public requests = 0;
@@ -19,6 +21,9 @@ export class CosmosDater {
     private readonly savedBlocks: Record<number, Block> = {};
     private readonly checkedBlocks: Record<number, number[]> = {};
 
+    /**
+     * Initializes a new instance of the CosmosDater class
+     */
     constructor(client: CosmWasmClient) {
         this.client = client;
     }
@@ -32,9 +37,9 @@ export class CosmosDater {
 
     /**
      * Get the block closest to the given date
-     * @param date The target date for which to find the nearest block
-     * @param after Block after, optional. Search for the nearest block before or after the given date. True by default
-     * @param refresh Refresh boundaries, optional. Recheck the latest block before request. False by default
+     * @param date - The target date for which to find the nearest block
+     * @param after - Block after, optional. Search for the nearest block before or after the given date. True by default
+     * @param refresh - Refresh boundaries, optional. Recheck the latest block before request. False by default
      * @returns A Promise resolving to a Block object with height and date of the closest block to the given date
      */
     public async getBlock(date: Date, after = true, refresh = false): Promise<Block> {
